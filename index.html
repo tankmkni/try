@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="test.js"></script>
+	<title>test</title>
+	<style>
+		iframe,object{ width: 100%; height: 220px; }
+		legend{ font-size: 20px; }
+		object{ border: solid; border-color: lightgray;}
+	</style>
+</head>
+<body>
+	<h1>メモ：パラメータの利用</h1>
+	<p>iframe内のDOM要素の値を取得したり操作する方法のまとめ<p/>
+	<h3></h3>
+
+		
+	<h2>iframeで別のhtmlファイルを表示</h2>
+	<fieldset><legend>iframe</legend>
+		<button id="trigger" onclick="test()">クリックでiframe内の要素が変化します</button><br/><br/>
+		<iframe src="test_children.html" id="elem"></iframe>
+	</fieldset><br/>
+	
+	<p>jsファイルのコード</p>
+	<object data="test.js" type="text/plain"></object><br/>
+	
+	<p>参考になったサイト</p>
+	<a href="https://notepad-blog.com/content/174/">【Javascript】エラー「Blocked a frame with origin "null" from accessing a cross-origin frame.」</a><br/>
+	<br/>
+</body>
+</html>
