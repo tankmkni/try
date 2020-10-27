@@ -6,5 +6,5 @@ function test(){	// 親要素のボタン操作で子要素の値を操作
 
 	// iframe内のtarget要素を操作
 	target.innerHTML = "親要素の操作で子要素を変更";
-	rarget.setAttribute("color","skyblue");
+	target.setAttribute("color","red");
 }
