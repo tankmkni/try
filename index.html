@@ -22,11 +22,13 @@
 		<iframe src="test_children.html" id="elem"></iframe>
 	</fieldset>
 	<button id="trigger" onclick="test()">クリックでiframe内の要素が変化します</button>
-	<button id="trigger" onclick="location.reload()">リセット</button><br/><br/>
+	<button onclick="location.reload()">リセット</button><br/><br/>
 	<p>※ローカル環境では「Blocked a frame with origin "null" from accessing a cross-origin frame.」というエラーで作動しない<br/>
 		 &emsp;ブラウザのセキュリティの問題のよう</p>
 	<p>参考になったサイト</p>
 	<a href="https://notepad-blog.com/content/174/">社内SEのITメモブログ</a><br/>
-	<br/>&
+	<br/>
+	<button onclick="history.back()">戻る</button>
+	<br/><br/><br/>
 </body>
 </html>
