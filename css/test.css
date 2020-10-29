@@ -1,16 +1,10 @@
 /*** index **/
-object{
-	width: 100%;
-	border: solid 1px lightgray;
-}
-iframe{ width: 100%;}
-fieldset{ margin-bottom: 5px;}
-legend{ font-size: 20px;}
+object,iframe{ width: 100%; border: solid 1px lightgray;}
 
 
 /*** parent ***/
-fieldset{ margin-bottom: 5px; }
-iframe{ width: 100%;}
+fieldset{ margin-bottom: 5px;}
+legend{ font-size: 20px;}
 
 
 /*** children ***/

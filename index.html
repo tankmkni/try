@@ -16,7 +16,7 @@
 	<p>test.js のコード</p>
 	<object data="test/test.js" type="text/plain" onload="setHeight( this )"></object><br/>
 	<p>親要素の表示</p>
-	<object data="test/test_parent.html" type="text/plain" onload="setHeight( this )"></object><br/><br/>
+	<iframe src="test/test_parent.html" onload="setHeight( this )"></iframe><br/><br/>
 
 	<p>※ローカル環境では「Blocked a frame with origin "null" from accessing a cross-origin frame.」というエラーで作動しない<br/>
 		 &emsp;ブラウザのセキュリティの制限のよう</p>
