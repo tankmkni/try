@@ -1,0 +1,24 @@
+/*** index **/
+object{
+	width: 100%;
+	border: solid;
+	border-color: lightgray;
+}
+#parent{ height: 225px;}
+#children{ height: 170px;}
+#js{ height: 155px;}
+#html{ height: 190px;}
+iframe{ width: 100%; height: 65px;}
+fieldset{ margin-bottom: 5px;}
+legend{ font-size: 20px;}
+
+
+/*** parent ***/
+#parent_body{ height:150px; }
+fieldset{ margin-bottom: 5px; }
+iframe{ width: 100%; height: 65px; }
+
+
+/*** children ***/
+h4,div{ margin: 0px 0px;}
+#target{ color: lime; }

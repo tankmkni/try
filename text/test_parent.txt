@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+	<link rel="stylesheet" href="../css/test.css" />
+	<script type="text/javascript" src="test.js"></script>
+	<title> &lt;iframe&gt; 内の要素操作</title>
+</head>
+<body id="parent_body">
+	<fieldset><legend> &lt;iframe&gt; </legend>
+		<iframe id="elem" src="test_children.html"></iframe>
+	</fieldset>
+	<button id="trigger" onclick="test()">クリックで &lt;iframe&gt; 内の要素が変化</button>
+	<button onclick="location.reload()">リセット</button><br/><br/>
+</body>
+</html>
