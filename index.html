@@ -2,24 +2,24 @@
 <html>
 <head><meta charset="utf-8"/>
 	<link rel="stylesheet" href="css/test.css" />
-	<script type="text/javascript" src="test.js"></script>
+	<script type="text/javascript" src="setHeight.js"></script>
 	<title>iframe内の要素操作</title>
 </head>
 <body>
-	<h1>メモ：iframe内要素を操作</h1>
-	<p>iframe内のDOM要素の値を取得したり操作する方法のまとめ<p/>
+	<h1>メモ：&lt;iframe&gt;内要素を操作</h1>
+	<p>&lt;iframe&gt;内のDOM要素の値を取得したり操作する方法のまとめ<p/>
 
 	<p>test_parent.html のコード</p>
-	<object id="parent" data="text/test_parent.txt" type="text/plain"></object><br/>
+	<object data="text/test_parent.txt" type="text/plain" onload="setHeight( this )"></object><br/>
 	<p>test_children.html のコード</p>
-	<object id="children" data="text/test_children.txt" type="text/plain"></object><br/>
+	<object data="text/test_children.txt" type="text/plain" onload="setHeight( this )"></object><br/>
 	<p>test.js のコード</p>
-	<object id="js" data="test/test.js" type="text/plain"></object><br/>
+	<object data="test/test.js" type="text/plain" onload="setHeight( this )"></object><br/>
 	<p>親要素の表示</p>
-	<object id="html" data="test/test_parent.html" type="text/plain"></object><br/><br/>
+	<object data="test/test_parent.html" type="text/plain" onload="setHeight( this )"></object><br/><br/>
 
 	<p>※ローカル環境では「Blocked a frame with origin "null" from accessing a cross-origin frame.」というエラーで作動しない<br/>
-		 &emsp;ブラウザのセキュリティの問題のよう</p>
+		 &emsp;ブラウザのセキュリティの制限のよう</p>
 	<p>参考になったサイト</p>
 	<a href="https://notepad-blog.com/content/174/">社内SEのITメモブログ</a><br/>
 	<br/>
